@@ -10,12 +10,10 @@
 		B61014CB274239350085E02D /* NSObject+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = B61014C6274239350085E02D /* NSObject+Extension.m */; };
 		B61014CC274239350085E02D /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B61014C7274239350085E02D /* YYClassInfo.m */; };
 		B61014CD274239350085E02D /* NSString+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B61014C8274239350085E02D /* NSString+YYModel.m */; };
-		B62F640E276C283200A3DFE8 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B62F6404276C283100A3DFE8 /* FMDatabaseAdditions.m */; };
-		B62F640F276C283200A3DFE8 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = B62F6406276C283100A3DFE8 /* FMDatabasePool.m */; };
-		B62F6410276C283200A3DFE8 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = B62F6409276C283100A3DFE8 /* FMResultSet.m */; };
-		B62F6411276C283200A3DFE8 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = B62F640A276C283100A3DFE8 /* FMDatabaseQueue.m */; };
-		B62F6412276C283200A3DFE8 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = B62F640D276C283200A3DFE8 /* FMDatabase.m */; };
 		B657F704276898B600AC9B74 /* YYDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = B657F703276898B600AC9B74 /* YYDatabase.m */; };
+		B6A2420B2BBD4D020037B61A /* YYSQLStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A2420A2BBD4D020037B61A /* YYSQLStorage.m */; };
+		B6A2420E2BBD60BB0037B61A /* DebugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A2420D2BBD60BB0037B61A /* DebugViewController.swift */; };
+		B6A242102BBD61580037B61A /* Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A2420F2BBD61580037B61A /* Then.swift */; };
 		D96E58E81B7F885D004B8B45 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96E58E71B7F885D004B8B45 /* AssetsLibrary.framework */; };
 		D9700D9C1BC7D44500F878A4 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D9700D9B1BC7D44500F878A4 /* libz.tbd */; };
 		D9700D9E1BC7D44B00F878A4 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D9700D9D1BC7D44B00F878A4 /* libsqlite3.tbd */; };
@@ -122,19 +120,13 @@
 		B61014C8274239350085E02D /* NSString+YYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+YYModel.m"; sourceTree = "<group>"; };
 		B61014C9274239350085E02D /* NSObject+YYCodable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYCodable.h"; sourceTree = "<group>"; };
 		B61014CA274239350085E02D /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
-		B62F6403276C283100A3DFE8 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = ../../../../fmdb/src/fmdb/FMDatabasePool.h; sourceTree = "<group>"; };
-		B62F6404276C283100A3DFE8 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = ../../../../fmdb/src/fmdb/FMDatabaseAdditions.m; sourceTree = "<group>"; };
-		B62F6405276C283100A3DFE8 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = ../../../../fmdb/src/fmdb/FMDatabase.h; sourceTree = "<group>"; };
-		B62F6406276C283100A3DFE8 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = ../../../../fmdb/src/fmdb/FMDatabasePool.m; sourceTree = "<group>"; };
-		B62F6407276C283100A3DFE8 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDB.h; path = ../../../../fmdb/src/fmdb/FMDB.h; sourceTree = "<group>"; };
-		B62F6408276C283100A3DFE8 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = ../../../../fmdb/src/fmdb/FMDatabaseAdditions.h; sourceTree = "<group>"; };
-		B62F6409276C283100A3DFE8 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = ../../../../fmdb/src/fmdb/FMResultSet.m; sourceTree = "<group>"; };
-		B62F640A276C283100A3DFE8 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = ../../../../fmdb/src/fmdb/FMDatabaseQueue.m; sourceTree = "<group>"; };
-		B62F640B276C283100A3DFE8 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = ../../../../fmdb/src/fmdb/FMResultSet.h; sourceTree = "<group>"; };
-		B62F640C276C283100A3DFE8 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = ../../../../fmdb/src/fmdb/FMDatabaseQueue.h; sourceTree = "<group>"; };
-		B62F640D276C283200A3DFE8 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = ../../../../fmdb/src/fmdb/FMDatabase.m; sourceTree = "<group>"; };
 		B657F702276898B600AC9B74 /* YYDatabase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYDatabase.h; sourceTree = "<group>"; };
 		B657F703276898B600AC9B74 /* YYDatabase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYDatabase.m; sourceTree = "<group>"; };
+		B6A242092BBD4D020037B61A /* YYSQLStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYSQLStorage.h; sourceTree = "<group>"; };
+		B6A2420A2BBD4D020037B61A /* YYSQLStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYSQLStorage.m; sourceTree = "<group>"; };
+		B6A2420C2BBD60BA0037B61A /* YYKitDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YYKitDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		B6A2420D2BBD60BB0037B61A /* DebugViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugViewController.swift; sourceTree = "<group>"; };
+		B6A2420F2BBD61580037B61A /* Then.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Then.swift; sourceTree = "<group>"; };
 		D96E58E71B7F885D004B8B45 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		D9700D9B1BC7D44500F878A4 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		D9700D9D1BC7D44B00F878A4 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -357,24 +349,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		B62F63ED276B676F00A3DFE8 /* FMDB */ = {
-			isa = PBXGroup;
-			children = (
-				B62F6405276C283100A3DFE8 /* FMDatabase.h */,
-				B62F640D276C283200A3DFE8 /* FMDatabase.m */,
-				B62F6408276C283100A3DFE8 /* FMDatabaseAdditions.h */,
-				B62F6404276C283100A3DFE8 /* FMDatabaseAdditions.m */,
-				B62F6403276C283100A3DFE8 /* FMDatabasePool.h */,
-				B62F6406276C283100A3DFE8 /* FMDatabasePool.m */,
-				B62F640C276C283100A3DFE8 /* FMDatabaseQueue.h */,
-				B62F640A276C283100A3DFE8 /* FMDatabaseQueue.m */,
-				B62F6407276C283100A3DFE8 /* FMDB.h */,
-				B62F640B276C283100A3DFE8 /* FMResultSet.h */,
-				B62F6409276C283100A3DFE8 /* FMResultSet.m */,
-			);
-			path = FMDB;
-			sourceTree = "<group>";
-		};
 		D97484C719CAAD2900F46DE1 = {
 			isa = PBXGroup;
 			children = (
@@ -396,10 +370,12 @@
 		D97484D219CAAD2900F46DE1 /* YYKitDemo */ = {
 			isa = PBXGroup;
 			children = (
-				B62F63ED276B676F00A3DFE8 /* FMDB */,
 				D97484D719CAAD2900F46DE1 /* YYAppDelegate.h */,
 				D97484D819CAAD2900F46DE1 /* YYAppDelegate.m */,
+				B6A2420F2BBD61580037B61A /* Then.swift */,
+				B6A2420D2BBD60BB0037B61A /* DebugViewController.swift */,
 				D97484D319CAAD2900F46DE1 /* Supporting Files */,
+				B6A2420C2BBD60BA0037B61A /* YYKitDemo-Bridging-Header.h */,
 			);
 			path = YYKitDemo;
 			sourceTree = "<group>";
@@ -552,6 +528,8 @@
 				D9B25FE51BEE79370038C00A /* YYDiskCache.m */,
 				D9B25FE61BEE79370038C00A /* YYKVStorage.h */,
 				D9B25FE71BEE79370038C00A /* YYKVStorage.m */,
+				B6A242092BBD4D020037B61A /* YYSQLStorage.h */,
+				B6A2420A2BBD4D020037B61A /* YYSQLStorage.m */,
 			);
 			path = Cache;
 			sourceTree = "<group>";
@@ -719,6 +697,7 @@
 				TargetAttributes = {
 					D97484CF19CAAD2900F46DE1 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 1420;
 					};
 				};
 			};
@@ -769,12 +748,10 @@
 				D9B260891BEE79370038C00A /* YYTextSelectionView.m in Sources */,
 				D9B260671BEE79370038C00A /* UIGestureRecognizer+YYAdd.m in Sources */,
 				D9B260681BEE79370038C00A /* UIImage+YYAdd.m in Sources */,
-				B62F640F276C283200A3DFE8 /* FMDatabasePool.m in Sources */,
 				D9B260A01BEE79370038C00A /* YYWeakProxy.m in Sources */,
 				D9B260951BEE79370038C00A /* YYAsyncLayer.m in Sources */,
 				D9B260691BEE79370038C00A /* UIScreen+YYAdd.m in Sources */,
 				D9B2608E1BEE79370038C00A /* YYTextAttribute.m in Sources */,
-				B62F6410276C283200A3DFE8 /* FMResultSet.m in Sources */,
 				D9B2605A1BEE79370038C00A /* NSObject+YYAddForKVO.m in Sources */,
 				D9B260601BEE79370038C00A /* UIApplication+YYAdd.m in Sources */,
 				D9B260881BEE79370038C00A /* YYTextMagnifier.m in Sources */,
@@ -797,21 +774,21 @@
 				D9B2607B1BEE79370038C00A /* YYImageCoder.m in Sources */,
 				D9B260981BEE79370038C00A /* YYGestureRecognizer.m in Sources */,
 				D9B2608D1BEE79370038C00A /* YYTextArchiver.m in Sources */,
-				B62F6412276C283200A3DFE8 /* FMDatabase.m in Sources */,
 				B61014CB274239350085E02D /* NSObject+Extension.m in Sources */,
-				B62F6411276C283200A3DFE8 /* FMDatabaseQueue.m in Sources */,
 				D9B2608C1BEE79370038C00A /* UIPasteboard+YYText.m in Sources */,
 				D9B2606C1BEE79370038C00A /* UITextField+YYAdd.m in Sources */,
 				D9B2607D1BEE79370038C00A /* YYWebImageManager.m in Sources */,
 				D9B2609F1BEE79370038C00A /* YYTransaction.m in Sources */,
 				D9B260611BEE79370038C00A /* UIBarButtonItem+YYAdd.m in Sources */,
 				D9B260821BEE79370038C00A /* YYTextDebugOption.m in Sources */,
+				B6A2420B2BBD4D020037B61A /* YYSQLStorage.m in Sources */,
 				D9B260531BEE79370038C00A /* NSDate+YYAdd.m in Sources */,
 				D9B260771BEE79370038C00A /* YYAnimatedImageView.m in Sources */,
 				D9B2608A1BEE79370038C00A /* NSAttributedString+YYText.m in Sources */,
 				D9B2608F1BEE79370038C00A /* YYTextParser.m in Sources */,
 				D9B2609A1BEE79370038C00A /* YYReachability.m in Sources */,
 				D9B260971BEE79370038C00A /* YYFileHash.m in Sources */,
+				B6A2420E2BBD60BB0037B61A /* DebugViewController.swift in Sources */,
 				D9B2609E1BEE79370038C00A /* YYTimer.m in Sources */,
 				D9B260651BEE79370038C00A /* UIDevice+YYAdd.m in Sources */,
 				D9B260711BEE79370038C00A /* YYMemoryCache.m in Sources */,
@@ -821,7 +798,6 @@
 				B61014CC274239350085E02D /* YYClassInfo.m in Sources */,
 				D9B260991BEE79370038C00A /* YYKeychain.m in Sources */,
 				B61014CD274239350085E02D /* NSString+YYModel.m in Sources */,
-				B62F640E276C283200A3DFE8 /* FMDatabaseAdditions.m in Sources */,
 				D9B2609B1BEE79370038C00A /* YYSentinel.m in Sources */,
 				D9B2607E1BEE79370038C00A /* YYWebImageOperation.m in Sources */,
 				D9B2605B1BEE79370038C00A /* NSString+YYAdd.m in Sources */,
@@ -835,6 +811,7 @@
 				D9B260721BEE79370038C00A /* _YYWebImageSetter.m in Sources */,
 				D9B260751BEE79370038C00A /* UIButton+YYWebImage.m in Sources */,
 				D9B260931BEE79370038C00A /* YYLabel.m in Sources */,
+				B6A242102BBD61580037B61A /* Then.swift in Sources */,
 				D9B260561BEE79370038C00A /* NSNotificationCenter+YYAdd.m in Sources */,
 				D9B260541BEE79370038C00A /* NSDictionary+YYAdd.m in Sources */,
 				D9B260811BEE79370038C00A /* YYTextContainerView.m in Sources */,
@@ -905,7 +882,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -952,7 +929,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -963,6 +940,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ENABLE_MODULES = YES;
 				COMPRESS_PNG_FILES = NO;
 				DEVELOPMENT_TEAM = NW3KV7KHV6;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -982,9 +960,12 @@
 					"$(PROJECT_DIR)/**",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ibireme.YYKitDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.as.face.YYKitDemo;
 				PRODUCT_NAME = YYKitDemo;
 				STRIP_PNG_TEXT = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "YYKitDemo/YYKitDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -993,6 +974,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ENABLE_MODULES = YES;
 				COMPRESS_PNG_FILES = NO;
 				DEVELOPMENT_TEAM = NW3KV7KHV6;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1011,9 +993,11 @@
 					"$(PROJECT_DIR)/**",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ibireme.YYKitDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.as.face.YYKitDemo;
 				PRODUCT_NAME = YYKitDemo;
 				STRIP_PNG_TEXT = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "YYKitDemo/YYKitDemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

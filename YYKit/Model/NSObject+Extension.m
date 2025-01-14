@@ -2682,7 +2682,7 @@ DBCondition db_day_is(const char *column, int day) {
         NSString *valRange = [[array _db_map:^id _Nullable(id obj, NSUInteger idx) {
             return DBValueDescription(obj);
         }] componentsJoinedByString:@", "];
-        return @[[NSString stringWithFormat:@"delete from %@ where %@ in (%@);", tableName, primaryKey, valRange]];
+        return @[[NSString stringWithFormat:@"delete from %@ where %@ in(%@);", tableName, primaryKey, valRange]];
     }];
 }
 + (BOOL)db_delete {
@@ -3023,7 +3023,7 @@ DBCondition db_day_is(const char *column, int day) {
             id val = [obj valueForKeyPath:primaryKey];
             return DBValueDescription(val);
         }] componentsJoinedByString:@", "];
-        [sqls addObject:[NSString stringWithFormat:@"delete from %@ where %@ in (%@);", tableName, primaryKey, valRange]];
+        [sqls addObject:[NSString stringWithFormat:@"delete from %@ where %@ in(%@);", tableName, primaryKey, valRange]];
     }];
 }
 - (BOOL)db_updates {
