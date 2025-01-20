@@ -11,8 +11,14 @@ Pod::Spec.new do |s|
   s.source       = { :git => 'https://github.com/ibireme/YYKit.git', :tag => s.version.to_s }
   
   s.requires_arc = true
-  s.source_files = 'YYKit/**/*.{h,m}'
-  s.public_header_files = 'YYKit/**/*.{h}'
+  s.default_subspec = 'Core'
+
+  s.subspec 'Core' do |core|
+    core.source_files = 'YYKit/**/*.{h,m}'
+    core.public_header_files = 'YYKit/**/*.{h}'
+    core.libraries = 'z', 'sqlite3'
+    core.frameworks = 'UIKit', 'CoreFoundation', 'CoreText', 'CoreGraphics', 'CoreImage', 'QuartzCore', 'ImageIO', 'AssetsLibrary', 'Accelerate', 'MobileCoreServices', 'SystemConfiguration'
+  end
 
   non_arc_files = 'YYKit/Base/Foundation/NSObject+YYAddForARC.{h,m}', 'YYKit/Base/Foundation/NSThread+YYAdd.{h,m}'
   s.ios.exclude_files = non_arc_files
@@ -21,8 +27,9 @@ Pod::Spec.new do |s|
     sna.source_files = non_arc_files
   end
 
-  s.libraries = 'z', 'sqlite3'
-  s.frameworks = 'UIKit', 'CoreFoundation', 'CoreText', 'CoreGraphics', 'CoreImage', 'QuartzCore', 'ImageIO', 'AssetsLibrary', 'Accelerate', 'MobileCoreServices', 'SystemConfiguration'
-  s.ios.vendored_frameworks = 'Vendor/WebP.framework'
+  s.subspec 'WebP' do |webp|
+    webp.dependency 'YYKit/Core'
+    webp.ios.vendored_frameworks = 'Vendor/WebP.framework'
+  end
 
 end
